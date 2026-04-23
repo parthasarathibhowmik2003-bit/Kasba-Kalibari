@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasba Kalibari Temple | Sacred Shrine of Goddess Kali | Tripura</title>
+    <style>
+        :root {
+            --primary: #8B0000;
+            --gold: #D4AF37;
+            --cream: #FFF8E7;
+            --dark: #1a1a1a;
+            --text: #333;
+            --saffron: #FF9933;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--cream);
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, var(--primary), #4a0000);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        nav a:hover {
+            color: #fff;
+        }
+        
+        /* Hero Section */
+        .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                url('https://uploads.onecompiler.io/443tvqr4h/44m6y96mq/kamalasagar-agartala-tripura-1-attr-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 1rem;
+            font-family: Georgia, serif;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        
+        .hero-content .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--gold);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+        }
+        
+        /* History Section */
+        .history-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .history-text {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .history-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .highlight-box {
+            background: white;
+            padding: 2rem;
+            border-left: 5px solid var(--gold);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .highlight-box h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Architecture Section */
+        .architecture {
+            background: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Deity Section */
+        .deity-section {
+            background: linear-gradient(135deg, var(--primary), #4a0000);
+            color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+        }
+        
+        .deity-section h2 {
+            color: var(--gold);
+        }
+        
+        .deity-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .deity-text {
+            font-size: 1.1rem;
+        }
+        
+        .deity-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Rituals Section */
+        .rituals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .ritual-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--saffron);
+        }
+        
+        .ritual-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .ritual-time {
+            color: var(--saffron);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Lake Section */
+        .lake-section {
+            background: white;
+        }
+        
+        .lake-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        /* Visitor Info */
+        .visitor-info {
+            background: linear-gradient(135deg, var(--primary), #4a0000);
+            color: white;
+            border-radius: 20px;
+            padding: 3rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .info-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .info-card h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .info-card ul {
+            list-style: none;
+        }
+        
+        .info-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        
+        /* How to Reach */
+        .reach-section {
+            background: white;
+        }
+        
+        .transport-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .transport-card {
+            border: 2px solid var(--cream);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .transport-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .transport-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Nearby Attractions */
+        .nearby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .nearby-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .nearby-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .nearby-card .distance {
+            color: var(--saffron);
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .history-content, .deity-content, .lake-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        section {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#deity">Deity</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#rituals">Rituals</a></li>
+            <li><a href="#lake">Kamalasagar</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="#reach">How to Reach</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Kasba Kalibari</h1>
+            <p>Kamalasagar Kali Temple</p>
+            <p class="subtitle">Ancient Shakti Shrine of the Manikya Dynasty</p>
+            <p style="font-size: 1rem; margin-bottom: 2rem;">Built by Maharaja Dhanya Manikya | Late 15th Century</p>
+            <a href="#visit" class="btn">Plan Your Visit</a>
+        </div>
+    </header>
+
+    <!-- History Section -->
+    <section id="history">
+        <h2 class="section-title">Sacred Legacy</h2>
+        <div class="history-content">
+            <div class="history-text">
+                <p>Perched atop a serene hillock overlooking the tranquil waters of Kamalasagar Lake, the <strong>Kasba Kalibari Temple</strong> (also known as <strong>Kasbeswari Kali Mata Temple</strong>) stands as one of the most ancient and revered Shakti shrines in Northeast India [^10^]. This sacred temple was built by <strong>Maharaja Dhanya Manikya</strong> in the late 15th century (around 1490–1520 CE), during the golden era of the Manikya Dynasty that ruled Tripura for over a millennium [^10^].</p>
+                
+                <p>Although initial work was started by Maharaja Kaliyan Manikya, it was Maharaja Dhanya Manikya who ultimately completed this magnificent temple [^11^]. The king, a profound devotee of Goddess Kali, recognized her as the divine protector of his kingdom and commissioned this temple as both a spiritual sanctuary and a symbol of royal devotion [^8^].</p>
+                
+                <p>The temple holds immense historical significance as it is situated right beside the <strong>India-Bangladesh border</strong>, making it not only a spiritual landmark but also a geographical marvel [^10^]. Maharaja Dhanya Manikya is also renowned for constructing the famous <strong>Tripura Sundari Temple</strong> in Udaipur, and the Kasba Kalibari is viewed as part of the same sacred lineage of Shakti worship in the region [^8^].</p>
+                
+                <div class="highlight-box">
+                    <h3>📜 Historical Significance</h3>
+                    <p>The temple represents the deep-rooted Shakta tradition of Tripura, where the divine feminine is central to cosmic existence. It reflects a unique fusion of local tribal beliefs with Bengali Tantric and Vaishnavite traditions, making it a powerful center of faith, protection, and spiritual transformation [^8^].</p>
+                </div>
+            </div>
+            <div class="history-image">
+                <img src="https://uploads.onecompiler.io/443tvqr4h/44m6y96mq/_13721326840.jpg" 
+                     alt="Kasba Kalibari Temple overlooking Kamalasagar Lake" 
+                     style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                <p style="text-align: center; margin-top: 1rem; font-style: italic; color: #666;">The ancient temple overlooking Kamalasagar Lake</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deity Section -->
+    <section id="deity" class="deity-section">
+        <h2 class="section-title" style="color: white;">The Divine Mother</h2>
+        <div class="deity-content">
+            <div class="deity-text">
+                <p>The presiding deity of this temple is <strong>Kasbeswari Kali</strong>, though the idol is actually a magnificent representation of <strong>Dasabhuja Durga (Mahishasurmardini)</strong> — the ten-armed goddess who slayed the demon Mahishasura [^10^]. This 15th-century idol is carved from sandstone and depicts the goddess in her most powerful, protective, and liberating manifestation [^8^].</p>
+                
+                <p>At the feet of the idol lies a sacred <strong>Shivalinga</strong>, symbolizing the divine union of Shakti and Shiva [^10^]. Though the idol represents Ma Durga, it is worshipped as Maa Kali, reflecting the unique syncretic traditions of Tripura where the boundaries between different forms of the Divine Mother dissolve into pure devotion.</p>
+                
+                <p>For the people of Tripura and Eastern India, Kali is not merely a goddess of destruction, but also one of <strong>liberation (Moksha), time (Kala), and transformation</strong> [^8^]. Devotees believe that worshipping here can remove obstacles, protect families from harm, help overcome mental stress, and fulfill sincere desires.</p>
+            </div>
+            <div class="deity-image">
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; text-align: center; border: 2px solid var(--gold);">
+                    <div style="font-size: 5rem; margin-bottom: 1rem;">🕉️</div>
+                    <h3 style="color: var(--gold); margin-bottom: 1rem;">Goddess Kasbeswari</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        <strong>Form:</strong> Dasabhuja Durga (Mahishasurmardini)<br>
+                        <strong>Material:</strong> 15th Century Sandstone Idol<br>
+                        <strong>Special Feature:</strong> Shivalinga at the feet<br>
+                        <strong>Worship:</strong> As Maa Kali<br>
+                        <strong>Significance:</strong> Protection & Liberation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <h2 class="section-title">Architectural Splendor</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">
+            The temple showcases a fascinating blend of <strong>traditional Bengali and Mughal architectural styles</strong>, reflecting the cultural synthesis of medieval Tripura [^9^].
+        </p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏛️</div>
+                <h3>Hilltop Location</h3>
+                <p>The temple is strategically placed on a hillock overlooking Kamalasagar Lake, offering panoramic views of the surrounding landscape and the distant Bangladesh border [^10^].</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏗️</div>
+                <h3>Bengali-Mughal Fusion</h3>
+                <p>The architecture represents a unique blend of traditional Bengali temple design with Mughal influences, creating a distinctive aesthetic found nowhere else in the region [^9^].</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🙏</div>
+                <h3>Sanctum Sanctorum</h3>
+                <p>The garbhagriha houses the ancient sandstone idol of the goddess, adorned with red garments, floral offerings, and symbolic weapons in her dynamic pose [^8^].</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌳</div>
+                <h3>Serene Surroundings</h3>
+                <p>The temple is surrounded by open spaces, ancient trees, and peace-inducing silence, making it not just a place of ritual but also of meditation and inward reflection [^8^].</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⏳</div>
+                <h3>17th Century Renovation</h3>
+                <p>While the original idol dates to the 15th century, the present temple structure was rebuilt in the 17th century, preserving the ancient spiritual essence while ensuring structural integrity [^10^].</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌊</div>
+                <h3>Lake Integration</h3>
+                <p>The temple's design harmonizes with Kamalasagar Lake below, creating a perfect reflection of spiritual tranquility where water and worship meet in divine union.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rituals Section -->
+    <section id="rituals">
+        <h2 class="section-title">Daily Rituals & Festivals</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 3rem; font-size: 1.1rem;">
+            Worship at Kasba Kalibari follows ancient traditions with deep adherence to Shakta practices, blending devotion with esoteric wisdom [^8^].
+        </p>
+        
+        <div class="rituals-grid">
+            <div class="ritual-card">
+                <h3>🌅 Mangala Aarti</h3>
+                <div class="ritual-time">5:30 AM</div>
+                <p>Performed at sunrise to awaken the deity. Devotees offer water, flowers, incense, and light lamps to begin the day with divine blessings [^8^].</p>
+            </div>
+            
+            <div class="ritual-card">
+                <h3>🍚 Bhog Offering</h3>
+                <div class="ritual-time">12:00 PM</div>
+                <p>Cooked food, sweets, and fruits are offered to the goddess and later distributed as prasadam to devotees, symbolizing divine grace [^8^].</p>
+            </div>
+            
+            <div class="ritual-card">
+                <h3>🪔 Sandhya Aarti</h3>
+                <div class="ritual-time">6:30 PM</div>
+                <p>As dusk falls, the temple resounds with rhythmic chanting of mantras and beating of drums. Lamps are lit, filling the premises with divine energy [^8^].</p>
+            </div>
+            
+            <div class="ritual-card">
+                <h3>🎆 Kali Puja (Diwali)</h3>
+                <div class="ritual-time">Amavasya (New Moon)</div>
+                <p>The grandest festival at the temple. Beautifully decorated with offerings of meat, rice, hibiscus flowers, and red sindoor. Night-long celebrations [^8^].</p>
+            </div>
+            
+            <div class="ritual-card">
+                <h3>🌺 Navratri</h3>
+                <div class="ritual-time">Nine Nights</div>
+                <p>Special recitations and yagnas (fire offerings) are conducted during the nine nights of divine feminine worship, attracting devotees from across the region [^8^].</p>
+            </div>
+            
+            <div class="ritual-card">
+                <h3>📿 Special Days</h3>
+                <div class="ritual-time">Tuesdays & Saturdays</div>
+                <p>Considered especially auspicious for Kali worship. Devotees throng the temple, fasting and offering prayers with intense devotion [^8^].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kamalasagar Lake Section -->
+    <section id="lake" class="lake-section">
+        <h2 class="section-title">Kamalasagar Lake</h2>
+        <div class="lake-content">
+            <div class="lake-image">
+                <div style="background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 3rem; border-radius: 15px; text-align: center; color: white;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🌊</div>
+                    <h3 style="color: var(--gold); margin-bottom: 1rem;">The Wavy Blue Waters</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        <strong>Dug by:</strong> Maharaja Dhanya Manikya (1490–1520)<br>
+                        <strong>Location:</strong> At the foot of the temple hillock<br>
+                        <strong>Significance:</strong> Enhances temple beauty<br>
+                        <strong>Type:</strong> Artificial lake with wavy blue waters<br>
+                        <strong>View:</strong> Panoramic from temple hilltop
+                    </p>
+                </div>
+            </div>
+            <div class="lake-text">
+                <p>The <strong>Kamalasagar Lake</strong> was dug by Maharaja Dhanya Manikya during his reign (1490–1520 CE), the same visionary ruler who built the temple [^10^]. This magnificent artificial lake stretches before the temple like a shimmering mirror, reflecting the ancient shrine and the azure sky above.</p>
+                
+                <p>The lake is part of a grand hydraulic tradition in Tripura. During that era, Tripura's capital was Udaipur (in present-day South Tripura), which is famously known as a <strong>'lake-town'</strong> because of the surfeit of large lakes dug by different princely rulers [^10^]. These lakes, coupled with the river Gomati that flows by Udaipur, create a mesmerizing waterscape that continues to enthuse tourists.</p>
+                
+                <p>The wavy blue waters of Kamalasagar rightly enhance the beauty of the Kalibari temple, creating a perfect harmony between nature and spirituality. The reflection of the ancient temple in the tranquil waters during sunrise and sunset is a sight that leaves visitors spellbound.</p>
+                
+                <div class="highlight-box">
+                    <h3>💡 Did You Know?</h3>
+                    <p>Maharaja Dhanya Manikya also dug two wavy blue water lakes in front of the Ujjayanta Palace in Agartala, demonstrating his passion for creating beautiful water bodies that would enhance the architectural grandeur of his kingdom [^10^].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Information -->
+    <section id="visit">
+        <div class="visitor-info">
+            <h2 class="section-title" style="color: white;">Plan Your Visit</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Experience the divine serenity of one of Tripura's most ancient Shakti shrines</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🕐 Temple Timings</h3>
+                    <ul>
+                        <li><strong>Opening:</strong> 5:00 AM</li>
+                        <li><strong>Closing:</strong> 8:00 PM</li>
+                        <li><strong>Morning Aarti:</strong> 5:30 AM</li>
+                        <li><strong>Evening Aarti:</strong> 6:30 PM</li>
+                        <li><strong>Bhog:</strong> 12:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📍 Location Details</h3>
+                    <ul>
+                        <li><strong>Village:</strong> Kasba</li>
+                        <li><strong>District:</strong> Sepahijala</li>
+                        <li><strong>Distance from Agartala:</strong> ~27 km</li>
+                        <li><strong>Border:</strong> Beside Bangladesh</li>
+                        <li><strong>Setting:</strong> Hillock with lake view</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🙏 Visitor Guidelines</h3>
+                    <ul>
+                        <li>Dress modestly and respectfully</li>
+                        <li>Maintain silence in the sanctum</li>
+                        <li>Photography restricted during rituals</li>
+                        <li>Remove footwear before entering</li>
+                        <li>Best time: Early morning or twilight</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🎉 Best Time to Visit</h3>
+                    <ul>
+                        <li><strong>Kali Puja:</strong> Diwali (Amavasya)</li>
+                        <li><strong>Navratri:</strong> Nine nights of worship</li>
+                        <li><strong>Tuesdays:</strong> Special Kali worship</li>
+                        <li><strong>Saturdays:</strong> Auspicious for prayers</li>
+                        <li><strong>Season:</strong> October to March</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Reach -->
+    <section id="reach" class="reach-section">
+        <h2 class="section-title">How to Reach</h2>
+        
+        <div class="transport-grid">
+            <div class="transport-card">
+                <h3>✈️ By Air</h3>
+                <p>The nearest airport is <strong>Maharaja Bir Bikram Airport (IXA)</strong> in Agartala, located approximately <strong>32 km</strong> from the temple [^12^]. The airport is well-connected with daily flights to major Indian cities including Kolkata, Guwahati, and Delhi.</p>
+            </div>
+            
+            <div class="transport-card">
+                <h3>🚂 By Train</h3>
+                <p><strong>Agartala Railway Station</strong> is the nearest railhead, situated about <strong>24 km</strong> from the temple [^12^]. It is the first state capital of independent India connected to the national rail network, with direct trains to Guwahati and other major cities.</p>
+            </div>
+            
+            <div class="transport-card">
+                <h3>🚌 By Road</h3>
+                <p>Regular buses and small vehicles are available from <strong>Agartala Bus Stand</strong> to Rastarmatha, Bishalgarh. From Rastarmatha, auto-rickshaws are available to reach Kasba Kalibari Temple [^12^]. The approach road is well-maintained and suitable for all vehicles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Attractions -->
+    <section id="nearby">
+        <h2 class="section-title">Nearby Sacred Sites</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Explore the rich spiritual heritage of Tripura with these nearby attractions</p>
+        
+        <div class="nearby-grid">
+            <div class="nearby-card">
+                <h3>🕉️ Tripura Sundari Temple</h3>
+                <p class="distance">~60 km from Kasba</p>
+                <p>One of the 51 revered Shakti Peethas, located in Udaipur. Built by the same Maharaja Dhanya Manikya [^8^].</p>
+            </div>
+            
+            <div class="nearby-card">
+                <h3>🏛️ Ujjayanta Palace</h3>
+                <p class="distance">~27 km from Kasba</p>
+                <p>The former royal palace of Tripura in Agartala, now a state museum with beautiful gardens.</p>
+            </div>
+            
+            <div class="nearby-card">
+                <h3>🌺 Bhuvaneswari Temple</h3>
+                <p class="distance">~30 km from Kasba</p>
+                <p>Built on the banks of the Gomati River, famous for scenic beauty and association with Rabindranath Tagore [^8^].</p>
+            </div>
+            
+            <div class="nearby-card">
+                <h3>🗿 Unakoti Rock Sculptures</h3>
+                <p class="distance">~140 km from Kasba</p>
+                <p>A majestic Shaivite pilgrimage site with massive rock carvings and forested surroundings [^8^].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2 style="color: var(--gold); margin-bottom: 1rem;">Kasba Kalibari Temple</h2>
+            <p style="margin-bottom: 2rem;">Kamalasagar Kali Temple | Ancient Shakti Shrine of Tripura</p>
+            
+            <div class="footer-links">
+                <a href="https://tripuratourism.gov.in" target="_blank">Tripura Tourism</a>
+                <a href="https://sepahijala.nic.in" target="_blank">Sepahijala District</a>
+                <a href="#home">Back to Top</a>
+            </div>
+            
+            <p style="font-size: 0.9rem; opacity: 0.8;">
+                 Tripura Tourism & Sepahijala District Administration.<br>
+                Preserving the 500+ year heritage of the Manikya Dynasty.<br>
+                Information sourced from official government portals.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
